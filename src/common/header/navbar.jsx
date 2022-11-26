@@ -16,7 +16,7 @@ const [MobileMenu, setMobileMenu] = useState(false)
 
                <div className="navlink">
                  <ul className={MobileMenu ? "nav-links-MobileMenu" :
-                  "f_flex capitalize"} onClick={()=> setMobileMenu(false)} >
+                  "link f_flex capitalize"} onClick={()=> setMobileMenu(false)} >
                   <li>
                     <Link to="/">Home</Link> 
                   </li>  
@@ -38,8 +38,9 @@ const [MobileMenu, setMobileMenu] = useState(false)
                  </ul>
                 <button className="toggle" onClick={() =>setMobileMenu(!MobileMenu)}>
                    {
-                    MobileMenu ? <i className="fa fa-times close home-bth "></i> :
-                    <i className="fa-solid fa-xmark open "></i>
+                    MobileMenu ?
+                     <i className="fas fa-times close home-btn"></i> :
+                     <i className="fa-solid fa-xmark open fa fa-bars "></i>
                    }
                 </button>
                </div>

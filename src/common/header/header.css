@@ -1,5 +1,4 @@
 /*------------------- head------------------------------ */
-
 .head {
    background-color: #0f3460;
    padding: 10px 0;
@@ -10,24 +9,24 @@
 }
 .head label {
    margin-right: 30px;
-   font-size: 15px; 
+   font-size: 13px; 
 }
-
 /*------------------- search------------------------------ */
 .search {
     padding: 20px 0;
    }
-
 .search .logo img {
    width: 50px;
    height: auto;
 }
 .search .width {
-   width: 20%;
+   width: 5%;
+   
 }
 .search-box {
    width: 80%;
    border: 2px solid rgba(0, 0, 0, 0.1);
+   border-radius: 50px;
 }
 .search-box  i {
    width: 5%;
@@ -50,6 +49,7 @@
    text-align: center;
    justify-content: center;
    border-left: 2px solid rgba(0, 0, 0, 0.1);
+   padding: 10px;
 }
 .cart {
    position: relative;
@@ -121,7 +121,6 @@ header ul li a:hover {
 }
 
 @media (max-width: 768px) {
- 
    header ul {
    padding-top: 30px;
  }
@@ -136,6 +135,7 @@ header ul li a:hover {
    height: 100vh;
    background-color: white;
    z-index: 888;
+   box-shadow: rgba(50, 50, 93, 0.23) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
  }
  header ul li {
    width: 100%;
@@ -143,8 +143,9 @@ header ul li a:hover {
    text-transform: uppercase;
    line-height: 70px;
  }
+  
  header .link {
-   display:none;
+   display: none;
  }
  .close,
  .open {
@@ -154,7 +155,13 @@ header ul li a:hover {
    color: #ff014f;
    display: block;
    font-size: 25px;
-   z-index: 999;
+   z-index: 9999;
+ }
+ .open{
+   top: 14%;
+   right: 30px;
+   background-color: #e94560;
+   color: #fff;
  }
  .close {
    right: 45%;
@@ -162,6 +169,14 @@ header ul li a:hover {
  .close .home-btn { 
    background:linear-gradient(145deg, #e2e8ec, #ffff) ;
    color: #ff014f;
- }
+   border-radius: 50%;
+   padding: 0;
+   width: 60px;
+   height: 60px;
+   line-height: 60px;
+}
+.header.active {
+   height: 10vh;
+}
 }
 
